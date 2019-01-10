@@ -26,3 +26,14 @@ print("Min in list is: " + str(min(nums)));
 print("Max in list is: " + str(max(nums)));
 print(nums);
 print(len(nums));
+
+squares = []
+
+for x in range(1,11):
+	squares.append(x**2)
+
+print(squares)
+
+# lists are mutable and can be altered. 
+
+
