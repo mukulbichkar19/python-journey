@@ -1,7 +1,6 @@
 from ListNode import ListNode
 
 class SLL:
-
 	def isEmpty(head):
 		if(head == None):
 			return True
@@ -89,12 +88,39 @@ class SLL:
 			temp = temp.next
 		return head
 
-	head = ListNode(3)
-	node1 = ListNode(2)
+	def getNNodeFromEnd(head, n):
+		"""
+		# Approach 1: Using 2 iterations
+		size = 0
+		t = head
+		while(t):
+			t = t.next
+			size += 1
+		temp = head
+		cnt = 0
+		while(cnt != (size-n)):
+			temp = temp.next
+			cnt += 1
+		return temp"""
+		ptr1 = ptr2 = head
+		# Set the diff between ptr1 and ptr2 equal to n
+		diff = 0
+		while(ptr2 and diff != n):
+			ptr2 = ptr2.next
+			diff += 1
+		
+		while(ptr2):
+			ptr2 = ptr2.next
+			ptr1 = ptr1.next
+
+		return ptr1
+
+	head = ListNode(45)
+	node1 = ListNode(5)
 	node2 = ListNode(2)
-	node3 = ListNode(2)
-	node4 = ListNode(2)
-	node5 = ListNode(8)
+	node3 = ListNode(13)
+	node4 = ListNode(11)
+	node5 = ListNode(9)
 
 	head.next = node1
 	node1.next = node2
@@ -111,11 +137,13 @@ class SLL:
 	#head = deleteByValue(head, 90)
 	#printSLL(head)
 	#print(length(head))
-	print("Before Removing Duplicates: ")
-	printSLL(head)
-	removeDuplicates(head)
-	print("After Removing Duplicates: ")
-	printSLL(head)
+	#print("Before Removing Duplicates: ")
+	#printSLL(head)
+	#removeDuplicates(head)
+	#print("After Removing Duplicates: ")
+	#printSLL(head)
+	#print(length(head))
+	print(getNNodeFromEnd(head, 2).val)
 
 
 
