@@ -3,7 +3,7 @@ import heapq
 
 pq = []
 
-# Adding tuple's
+# Adding tuple's  
 heapq.heappush(pq, (1, 'leet'))
 heapq.heappush(pq, (-1, 'code'))
 heapq.heappush(pq, (4, 'lsd'))
