@@ -1,0 +1,10 @@
+
+############################## Looping in Python ##############################################
+Python does not contain do-while loop, it only contains for loop and while loop.
+while loop can be used for iterating over list, tuple and string
+Since elements inside a set and dictionary (dict) cannot be accessed using indexes it's better to use for loop for
+iterating over them.
+for loop is used for iterating over string, list, tuple, set or dictionary
+for loop needs range(start, stop, step) to go over indices
+for getting the index of an item we use the enumerate() function
+The range() built in function cannot be used to generate range in float.
