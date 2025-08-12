@@ -8,3 +8,27 @@ for loop is used for iterating over string, list, tuple, set or dictionary
 for loop needs range(start, stop, step) to go over indices
 for getting the index of an item we use the enumerate() function
 The range() built in function cannot be used to generate range in float.
+
+######################### List Comprehension ######################################################
+
+1. The general expression for list comprehension is: 
+   lst = [expression for var in sequence [optional for and/or if]]
+2. The general way for set comprehension is:
+   s = {expression for var in sequence [optional for and/or if]}
+3. The general way for dictionary comprehension is:
+   dict_var = {key:value for (key, value) in dictonary.items( )}
+4. 
+
+
+
+
+################################## Sets ###########################################
+1. Set are mutable, unordered collection of objects based on the hash of the object.
+2. Sets are used for membership testing and eliminating duplicate entries
+3. Sets of strings and tuples are only possible since they are immutable, whereas in case of lists they mutable
+   so the hash value can change so lists aren't allowed inside Sets
+4. Sets cannot be slices using [], they can be iterated using for loop, 
+5. while loop cannot be used as elements inside set cannot be accessed using indices.
+6. enumerate() built in function can be used.
+
+
