@@ -17,9 +17,6 @@ The range() built in function cannot be used to generate range in float.
    s = {expression for var in sequence [optional for and/or if]}
 3. The general way for dictionary comprehension is:
    dict_var = {key:value for (key, value) in dictonary.items( )}
-4. 
-
-
 
 
 ################################## Sets ###########################################
@@ -31,4 +28,27 @@ The range() built in function cannot be used to generate range in float.
 5. while loop cannot be used as elements inside set cannot be accessed using indices.
 6. enumerate() built in function can be used.
 
+
+########################## Objects ###############################
+1. class is a blue print for an object.
+2. In Python, __init__() is the default constructor that gets initialized once, and does not return anything
+3. We use self which is similar to the this keyword in Java, and stores the address of the object.
+4. We use self.__private_variable to keep the variable private (double underscore), self._protected_variable to keep
+   the variable as protected (single underscore) and self.public_variable to declare a public variable (no underscore)
+5. Python only supports operator overloading i.e. addition, sub, multiplication etc. It does not support function overloading
+   which means that function names in a program or method names within a class should be unique. If two methods by same name, we 
+   don't see an error but the latest version prevails.
+
+########################### Exception Handling #############################
+1. We use try, except blocks to handle exceptions in Python
+2. The common types of exceptions seen are:
+   ZeroDivisionError → division by zero
+   ValueError → invalid value, e.g., int("abc")
+   TypeError → invalid type operation, e.g., "1" + 2
+   IndexError → out-of-bounds list/tuple access
+   KeyError → dictionary key doesn’t exist
+   AttributeError → calling undefined attribute
+   FileNotFoundError, IOError, OSError → file/OS errors
+3. finally block is used for closing database connections, closing open files or to clean up resources in general.
+4. Exception handling is slow in DSA/Interviews so prevent using it, instead use in-built methods to prevent the exceptions or use default values.
 
